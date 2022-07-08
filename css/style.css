@@ -1,0 +1,632 @@
+@charset "utf-8";
+
+/*
+anasayfa.html
+gecersizkullanici.html
+bulunanlar.html
+*/
+
+body
+{
+    font-family: "Comic Sans MS";
+}
+/*
+img{
+      border-radius:20px/20px;
+  }
+  */
+form
+{
+    transform: translateY(11px);
+    margin : 0 auto;
+    background: rgba(248, 188, 7, 0.76);
+    width: 390px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 10px/10px;
+}
+
+.forms{
+    transform: translateX(-50px);
+    transform: translateY(2px);
+    margin : 0 auto;
+    background: rgba(6, 160, 42, 0.413);
+    width: 370px;
+    height:30px;
+    padding: 15px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 10px 10px;
+}
+.formg{
+    margin : 0 auto;
+    background: rgba(229, 192, 25, 0.989);
+    width: 250px;
+    height: 210px;
+    padding: 10px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+.formso{
+    transform: translateX(-50px);
+    transform: translateY(20px);
+    margin : 0 auto;
+    background: rgba(130, 237, 7, 0.607);
+    width: 370px;
+    height:30px;
+    border: none;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 10px 10px;
+}
+.cikis{
+    transform: translateX(-50px);
+    transform: translateY(15px);
+    margin : 0 auto;
+    background: rgba(213, 236, 6, 0.76);
+    width: 400px;
+    height:60px;
+    padding: 1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+.formsi{
+    transform: translateX(5px);
+    transform: translateY(17px);
+    margin : 0 auto;
+    background: rgba(236, 113, 154, 0.76);
+    width: 400px;
+    height:70px;
+    border: none;
+    padding: 1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 10px/10px;
+}
+.group
+{
+    margin: 0px ;
+    padding: 10px;
+}
+.gropes{
+    margin: 0px ;
+    transform: translateX(5px);
+    transform: translateY(5px);
+    padding: 1px;
+}
+.gropesi{
+    margin: 5px ;
+    transform: translateY(5px);
+    padding: 5px;
+}
+label
+{
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+input
+{
+    transform: translateX(0px);
+    transform: translateY(3px);
+    margin-top: 3px;
+    height: 30px;
+    width: 200px;
+    border-radius:20px/20px;
+    background: rgba(255, 255, 255, 0.76);
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.inputs
+{
+    transform: translateX(1px);
+    margin-top: 3px;
+    height: 30px;
+    width: 200px;
+    background: rgba(238, 200, 213, 0.76);
+    border-radius:20px/20px;
+    border: none;
+    padding-left: 5px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+input:focus{
+    border: 2px solid #496f1c;
+  /*  transform: translateX(-10px); */
+    width: 200px;
+}
+
+.calisanlistesi{
+    transform: translateY(-5px);
+    font-family: "Comic Sans MS";
+    cursor: pointer;
+    padding: 5px 10px;
+    height: 40px;
+    color:aliceblue;
+    background: rgba(21,73,3,1.00);
+    border: none;
+    border-radius:10px/10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+button{
+    font-family: "Comic Sans MS";
+    cursor: pointer;
+    padding: 5px 10px;
+    height: 40px;
+    color:aliceblue;
+    background: rgba(21,73,3,1.00);
+    border: none;
+    border-radius:10px/10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.buttona{
+      transform: translateY(4px);
+      font-family: "Comic Sans MS";
+      cursor: pointer;
+      padding: 5px 10px;
+      height: 40px;
+      color:aliceblue;
+      background: rgba(21,73,3,1.00);
+      border: none;
+      border-radius:10px/10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+  }
+
+  .buttonb{
+    /*  transform: translateX(60px);*/
+    transform: translateY(10px);
+      font-family: "Comic Sans MS";
+      cursor: pointer;
+      padding: 5px 10px;
+      height: 40px;
+      color:aliceblue;
+      background: rgba(21,73,3,1.00);
+      border: none;
+      border-radius:10px/10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.buttonc{
+      transform: translateY(-4px);
+      font-family: "Comic Sans MS";
+      cursor: pointer;
+      padding: 5px 10px;
+      height: 40px;
+      color:aliceblue;
+      background: rgba(21,73,3,1.00);
+      border: none;
+      border-radius:10px/10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+  }
+  .buttong{
+    transform: translateY(-15px);
+    font-family: "Comic Sans MS";
+    cursor: pointer;
+    padding: 5px 10px;
+    height: 40px;
+    color:aliceblue;
+    background: rgba(21,73,3,1.00);
+    border: none;
+    border-radius:10px/10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+button:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.link{
+    font-family: "Comic Sans MS";
+    cursor: pointer;
+    padding: 10px 20px;
+    height: 40px;
+    color:aliceblue;
+    background: rgba(21,73,3,1.00);
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    text-decoration: none; 
+}
+
+
+/* bulunanlar.html */
+.form_bulunanlar
+{
+    margin : 0 auto;
+    background: rgba(123,170,52,0.76);
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius:20px/20px;
+}
+
+/*kisi.css .forma*/
+.formi_bulunanlar
+{
+    margin : 0 auto;
+    background: rgba(123,170,52,0.76);
+    width: 300px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 20px/20px;
+    border-style: initial;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.button_bulunanlar{
+    font-family: "Comic Sans MS";
+    cursor: pointer;
+    padding: 5px 10px;
+    height: 40px;
+    color:aliceblue;
+    background: rgba(21,73,3,1.00);
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+.button_bulunanlar:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.buttona_bulunanlar
+{
+      transform: translateX(5px);
+      transform: translateY(-6px);
+      font-family: "Comic Sans MS";
+      cursor: pointer;
+      padding: 5px 5px;
+      height: 40px;
+      color:aliceblue;
+      background: rgb(11, 92, 96);
+      border: none;
+      border-radius:20px/20px;
+      text-transform: uppercase;
+      font-size: 15px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+  }
+  
+.forma_bulunanlar{
+    font-family: Arial;
+    margin : 0 auto;
+    background: rgba(6, 136, 73, 0.76);
+    width: 500px;
+    height: 130px;
+    padding: 0px;
+    border-radius:20px/20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.inputs_bulunanlar
+{
+        transform: translateX(0px);
+        transform: translateY(3px);
+        margin-top: 0px;
+        height: 20px;
+        width: 220px;
+        border-radius:20px/20px;
+        border: none;
+        padding-left: 15px;
+        font-size: 18px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+        background: rgba(212, 204, 86, 0.76);
+    
+}
+
+
+.inputsi_bulunanlar{
+        transform: translateX(0px);
+        transform: translateY(3px);
+        margin-top: 5px;
+        height: 30px;
+        width: 150px;
+        border-radius:20px/20px;
+        border: none;
+        padding-left: 15px;
+        font-size: 18px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+        background: rgba(178, 44, 236, 0.76);
+    
+}
+.inputsi_bulunanlar:focus{
+    border: 2px solid #496f1c;
+    transform: translateX(-10px);
+    font-weight: bold;
+    color: azure;
+    width: 150px;
+}
+
+.buttonc_bulunanlar{
+    cursor: pointer;
+    font-weight: bolder;
+    font-display: auto;
+    width: 300px;
+    height:30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius:20px/20px;
+    color: black;
+}
+.buttonc_bulunanlar:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+
+/* images.html */
+form.images{
+    width:770px;
+    height:350px;
+    background-color: rgb(169, 155, 204);
+    border-radius: 20px 20px;
+    padding-top: 5px;
+    padding: 1px;
+}
+.forma_images{
+    width:300px;
+    height:30px;
+    background-color: rgb(68, 223, 16);
+    padding: 6px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: 80%;
+}
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+img{
+    width: 290;
+    height:290;
+    border-radius: 20px 20px;
+}
+
+.buttonc_images{
+    cursor: pointer;
+    font-weight: bolder;
+    font-display: auto;
+    width: 300px;
+    height:30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius:20px/20px;
+    color: black;
+}
+
+.buttonc_images:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+
+.input_images{
+    margin-top: 0px;
+    height: 30px;
+    width: 300px;
+    border-radius:20px/20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+.input_images:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+.input_images:focus{
+    border: 2px solid #264503;
+    transform: translateX(15px);
+    width: 300px;
+}
+
+/*  -----------------------------------------------
+kisi.html, guncelle.html, kisiguncel.html
+---------------------------------------------------- */
+
+h1{
+margin: 0;
+text-transform: uppercase;
+padding-bottom: 5px;
+border-bottom: 3px solid rgba(58,87,15,0.80);
+color: rgb(130, 31, 8);
+}
+
+form.kisisel 
+{
+    margin : 0 auto;
+    background: rgba(169, 231, 12, 0.76);
+    width: 450px;
+    height: 350px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius:20px/20px;
+}
+
+.formguncelleme{
+    margin : 0 auto;
+    background: rgba(169, 231, 12, 0.76);
+    width: 550px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius:20px/20px;
+}
+
+
+.table_kisisel
+{
+    border-radius:20px/20px;
+    background-color: rgb(225, 170, 102);
+}
+
+
+.form_kisisel
+{
+    margin : 0 auto;
+    background: rgba(169, 231, 12, 0.76);
+    width: 300px;
+    height:25px;
+    padding: 10px;
+    padding-top: 4px;
+    border-style: initial;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.formag
+{
+    margin : 0 auto;
+    background: rgba(169, 231, 12, 0.76);
+    width: 300px;
+    height:25px;
+    padding: 4px;
+    border-radius: 20px/20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+.buttonckisisel{
+    cursor: pointer;
+    font-weight: bolder;
+    font-display: auto;
+    width: 300px;
+    height:30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius:20px/20px;
+    color: black;
+}
+.buttonckisisel:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+.buttonckisisel:focus{
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+/* kayit.html, welcome.html */
+form.kayitgiris
+{
+    margin : 0 auto;
+    background: rgba(199, 181, 16, 0.76);
+    width: 400px;
+    height: 170px;
+    padding: 1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 20px 20px;;
+}
+
+.formskayitgiris
+{
+    transform: translateX(-50px);
+    transform: translateY(7px);
+    margin : 0 auto;
+    background: rgba(153,190,72,0.76);
+    width: 300px;
+    height: 40px;
+    padding: 0px; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius: 20px 20px;;
+}
+
+
+.buttonkayitgiris{
+    font-family: "Comic Sans MS";
+    cursor: pointer;
+    padding: 10px 10px; 
+    height: 40px;
+    color:rgb(255, 255, 255);
+    background: rgb(31, 65, 2);
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    transform: translateY(0px);
+    border:none;
+    border-radius: 20px/20px;
+}
+
+/* === */
+.buttonkayitgiris:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.inputkayitgiris{
+    transform: translateX(80px);
+    margin-top: 3px;
+    height: 30px;
+    width: 200px;
+    border-radius:20px/20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+form.yenigiris
+{
+    margin : 0 auto;
+    background: rgba(169, 231, 12, 0.76);
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+    border-radius:20px/20px;
+}
+
+.inputyenigiris{
+    margin-top: 5px;
+    height: 30px;
+    width: 360px;
+    border-radius:20px/20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+.inputyenigiris:focus{
+    border: 2px solid #264503;
+    transform: translateX(15px);
+    width: 360px;
+}
+
+.inputyenigiris:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background: rgba(21,73,3,1.00);
+}

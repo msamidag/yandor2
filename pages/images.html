@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <form action="kisi.html" method="GET" class="images">
+      <div>
+          <div class="gallery">
+            <a target="_blank" href="./img/{{.ResimAd}}.jpg">
+            <img src="./img/{{.ResimAd}}.jpg"  alt="{{.ResimAd}}" >
+            </a>
+          <div class="desc">Resim</div>
+        </div>
+
+      <div class="gallery">
+          <a target="_blank" href="./img/{{.ResimAd}}{{.Resima}}.jpg">
+          <img src="./img/{{.ResimAd}}{{.Resima}}.jpg"  alt="ResimAd}}{{.Resima}}" >
+          </a>
+        <div class="desc">Resim1</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="./img/{{.ResimAd}}{{.Resimb}}.jpg">
+          <img  src="./img/{{.ResimAd}}{{.Resimb}}.jpg"  alt="{{.ResimAd}}{{.Resimb}}">
+        </a>
+        <div class="desc">Resim2</div>
+      </div>
+
+        <div class="gallery">
+          <a target="_blank" href="./img/{{.ResimAd}}{{.Resimc}}.jpg">
+            <img src="./img/{{.ResimAd}}{{.Resimc}}.jpg"  alt="{{.ResimAd}}{{.Resimc}}">
+          </a>
+          <div class="desc">Resim3</div>
+        </div>
+      </div>
+    </form>
+
+    <form action="/anasayfa" class="forma_images">
+        <button type="submit" class="buttonc_images" style="background-color:rgb(48, 158, 213)" >Anasayfa</button>
+    </form>
+    <form class="forma_images">
+      <input class="input_images" type="button" value="Geri" onclick="history.back()" style="background-color:rgb(48, 213, 119)">
+    </form>
+
+  </body>
+</html>

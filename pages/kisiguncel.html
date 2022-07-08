@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kisiguncel.html</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h1>{{.NameSurname}}</h1>
+        <center>
+        <form class="kisisel" action="/guncelle.html" method="GET">
+            <table class="gridtable">
+                <tr> <td align="center"><img src="./img/{{.ID}}.jpg" width="130" height="130"></td></tr>
+            </table> 
+
+            <table class="gridtable" align="center" >
+              <!--  <tr><td>Çalışan ID: {{.ID}}</td></tr>
+                <tr><td>Ad Soyad: {{.NameSurname}}</td></tr>-->
+                <tr><td>Anne: {{.Soygecmis.Anne}}</td></tr>
+                <tr><td>Baba: {{.Soygecmis.Baba}}</td></tr>
+                <tr><td>Kr. Hastalık:{{.Ozgecmis.KrHastalik}} </td></tr>
+                <tr><td>Tetanoz: {{.Ozgecmis.Tetanoz}}</td></tr>
+                <tr><td>Sigara: {{.Anamnez.Sigara}}</td></tr>
+                <tr><td>Alkol: {{.Anamnez.Alkol}}</td></tr>
+                <tr><td>Ameliyat: {{.Anamnez.Ameliyat}}</td></tr>
+            </table>   
+        </form>
+    </center>
+
+        <center>
+            <table>
+                <tr>
+                    <td>
+                      
+                        <form class="formag" action="/kayitguncelle" method="POST"><button class="buttonckisisel" type="submit" style="background-color:rgb(51, 140, 153)">Kayıt Güncelle</button></form>
+                        <form class="formag" action="/anasayfa" method="POST"><button class="buttonckisisel" type="submit" style="background-color:rgb(156, 222, 71)">Anasayfa</button>  </form>
+                        <form class="formag" action="/kayitsil" method="POST"><button class="buttonckisisel" type="submit" style="background-color: rgb(179, 73, 73)">Kaydı Sil</button></form>
+                        <form class="formag" action="/galeri" method="POST"><button class="buttonckisisel" type="submit" style="background-color: rgb(84, 191, 88)">Galeri</button></form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <form class="formag">
+            <input class="input_images" type="button" style="background-color:rgb(48, 158, 213)" value="Geri" onclick="history.back()">
+        </form>
+    </center>
+    </body>
+</html>

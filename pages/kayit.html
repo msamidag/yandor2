@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>kayit.html</title>
+        <link rel="stylesheet" href="./css/style.css"> 
+    </head>
+    <body>
+        <form class="kayitgiris" action="/kullanicikaydet" method="POST">
+                <div class="group">
+                    <input type="text" name="username" placeholder="Kullanıcı Adı">
+                </div>
+                <div class="group">
+                    <input type="password" name="password" placeholder="Şifre">
+                </div>
+                <div class="group">
+                    <center><button class="buttonkayitgiris" type="submit">Kaydet</button></center>
+                </div>
+        </form> 
+        
+        <div class="group">
+                <center><form class="formskayitgiris" action="/welcome" method="POST" ><button type="submit">Vazgeç</button></form></center>
+        </div>
+    </body>
+</html>

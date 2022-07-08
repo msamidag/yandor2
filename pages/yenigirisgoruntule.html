@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yenigirisgoruntule.html</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h1>yenigirisgoruntule.html</h1>
+        <form class="kisisel" action="/yenigiris.html" method="GET">
+            
+            <table class="gridtable" align="center" >
+                <tr><td>Çalışan ID: {{.ID}}</td></tr>
+                <tr><td>Ad Soyad: {{.NameSurname}}</td></tr>
+                <tr><td>Anne: {{.Soygecmis.Anne}}</td></tr>
+                <tr><td>Baba: {{.Soygecmis.Baba}}</td></tr>
+                <tr><td>Kr. Hastalık:{{.Ozgecmis.KrHastalik}} </td></tr>
+                <tr><td>Tetanoz: {{.Ozgecmis.Tetanoz}}</td></tr>
+                <tr><td>Sigara: {{.Anamnez.Sigara}}</td></tr>
+                <tr><td>Alkol: {{.Anamnez.Alkol}}</td></tr>
+                <tr><td>Ameliyat: {{.Anamnez.Ameliyat}}</td></tr>
+            </table>
+        </form>
+       <center>
+            <input class="inputyenigiris" type="button" value="Geri" onclick="history.back()">
+       </center>
+        <center>
+            <table>
+                <tr>
+                    <td>
+                   <form class="formyenigiris" action="/yenigiris" method="POST"><button type="submit" style="background-color:rgb(51, 140, 153)" class="buttonc_bulunanlar">Kayıt Oluştur</button></form>
+                   <form class="formyenigiris" action="/anasayfa" method="POST" ><button type="submit" style="background-color:rgb(156, 222, 71)" class="buttonc_bulunanlar">Anasayfa</button>  </form>
+                </td>
+                </tr>
+            </table>
+        </center>
+
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <!--   <meta http-equiv="refresh" content="20"> 20 sn de refresh -->
+      <title>bulunanlar.html</title>
+        <link rel="stylesheet" href="./css/style.css"> 
+    </head>
+<body>
+    {{range $index, $hopitop:=.}}
+    <table>
+        <tr>
+            <td> 
+              <p> 
+              <form action="/kayitbul" method="POST" class="form_bulunanlar">
+               <center>
+                <table>
+                  <tr><td> <img src="./img/{{.ID}}.jpg" width="80" height="80"></td></tr>
+                  <tr><td><input type="submit" name="id" value="{{.ID}}" class="inputsi_bulunanlar" ></td></tr>
+                </table>
+              </center>
+             </form>
+            </p>
+            </td>
+            <td>   <br>
+              <form class="forma_bulunanlar"><center>
+                <input type="button" name="adsoyad" value="{{.NameSurname}}" class="inputs_bulunanlar" ><br>
+                --------------------------<br>
+              <!--  <b>Çalışan ID: </b>{{.ID}} <b>Ad Soyad: </b>{{.NameSurname}}  -->
+                <b><u>Soygeçmiş </u>Anne: </b>{{.Soygecmis.Anne}}, <b>Baba:</b> {{.Soygecmis.Baba}}
+                <b> <u>Özgeçmiş: </u>Kr. Hastalık:</b>{{.Ozgecmis.KrHastalik}} <b>Tetanoz: </b>{{.Ozgecmis.Tetanoz}}
+                <b><u>Anamnez: </u>Sigara: </b>{{.Anamnez.Sigara}}, <b>Alkol: </b>{{.Anamnez.Alkol}}, <b>Ameliyat: </b>{{.Anamnez.Ameliyat}}
+              </center>
+            </form>
+            </td>
+        </tr>
+    </table>
+    {{end}}
+  
+<br>
+<center>
+    <form action="/anasayfa" class="formi_bulunanlar"><button type="submit" class="buttona_bulunanlar">Anasayfa</button></form>
+  </center>
+  </body>
+</html>

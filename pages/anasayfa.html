@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>anasayfa.html</title>
+
+       <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <center>
+            <div class="gropes">
+                <form action="/calisanlistesi" class="forms" method="POST"><button type="submit" class="calisanlistesi" style="background-color:blueviolet;">Çalışan listesi</button></form>   
+            </div>
+        </center> 
+
+        <center>
+            <form action="/parsielArama" method="POST" class="form">
+                <input type="text" name="advesoyadi" class="inputs" placeholder="Ad Soyad">
+                <button type="submit">Kayıt Ara</button>
+            </form>
+        </center>
+ 
+        <center>
+        <form action="/arananbul" method="POST" class="formsi">   
+            <select name="aramalar" id="aramalar">
+                <option value="soygecmis" selected>Soygeçmiş</option>
+                <option value="ozgecmis">Özgeçmiş</option>
+                <option value="anamnez">Anamnez</option>
+            </select>
+            <select name="saranan" id="saranan">
+                <option value="baba" selected>Baba</option>
+                <option value="anne">Anne</option>
+                <option value="krhastalik">Kr. Hastalıklar</option>
+                <option value="tetanoz">Tetanoz</option>
+                <option value="sigara">Sigara</option>
+                <option value="alkol">Alkol</option>
+                <option value="ameliyat">Ameliyat</option>
+            </select>     
+                <input type="text" name="aranan" class="input" placeholder="Arama kriteri">
+                <button type="submit" class="buttona">Kişileri Bul</button>  
+        </form>
+        </center>
+
+        <center>
+            <div class="group">
+            <form action="/kisigir" method="POST" class="formso"><button type="submit" class="buttonc" style="background-color:rgb(5, 148, 17);">Yeni Giriş</button></form>
+            </div>
+        </center>
+
+    <center>
+        <div class="group">
+            <form action="/welcome" method="POST" class="cikis"> <button type="submit" class="buttonb">Çıkış</button> </form>
+        </div>
+    </center>
+</body>
+</html>

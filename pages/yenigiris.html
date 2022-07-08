@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>yenigiris.html</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <form class="yenigiris" action="/yenigirisgoruntule" method="POST" >       
+            <table class="gridtable" align="center">
+                <tr><td> <input class="inputk" type="text" name="id" value="{{.ID}}"></td></tr>
+                <tr><td><input class="inputk" type="text" name="adsoyad" placeholder="Ad Soyad"></td></tr>
+                <tr><td><input class="inputk" type="text" name="anne" placeholder="Anne"></td></tr>
+                <tr><td><input class="inputk" type="text" name="baba" placeholder="Baba"></td></tr>
+                <tr><td><input class="inputk" type="text" name="krhastalik" placeholder="Kronik hastalık"></td></tr>
+                <tr><td><input class="inputk" type="text" name="tetanoz" placeholder="Tetanoz"></td></tr>
+                <tr><td><input class="inputk" type="text" name="sigara" placeholder="Sigara"></td></tr>
+                <tr><td><input class="inputk" type="text" name="alkol" placeholder="Alkol"></td></tr>
+                <tr><td><input class="inputk" type="text" name="ameliyat" placeholder="Ameliyat"></td></tr>
+            </table>
+            <center>
+                <button class="buttonckisisel" type="submit" style="background-color:rgb(113, 113, 206)">Gör kaydet</button>
+            </center>
+        </form>  
+        <center><form class="formag" action="/anasayfa"><button type="submit" style="background-color:rgb(165, 135, 204)" class="buttonc_bulunanlar">Anasayfa</button></form></center>
+    </body>
+</html>

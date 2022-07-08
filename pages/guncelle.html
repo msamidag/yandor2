@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>guncelle.html</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <form class="formguncelleme" action="/kisigun" method="POST">
+            <table class="gridtable" align="center">
+                <tr><td><b>Çalışan ID:</b></td><td><input type="text" name="id" value="{{.ID}}"></td></tr>
+                <tr><td><b>Ad Soyad:</b> </td><td><input type="text" name="adsoyad" value="{{.NameSurname}}"></td></tr>
+                <tr><td><b>Anne:</b> </td><td><input type="text" name="anne" value="{{.Soygecmis.Anne}}"></td></tr>
+                <tr><td><b>Baba:</b> </td><td><input type="text" name="baba" value="{{.Soygecmis.Baba}}"></td></tr>
+                <tr><td><b>Kr. Hastalık:</b> </td><td><input type="text" name="krhastalik" value= "{{.Ozgecmis.KrHastalik}}"></td></tr>
+                <tr><td><b>Tetanoz:</b> </td><td><input type="text" name="tetanoz" value="{{.Ozgecmis.Tetanoz}}"></td></tr>
+                <tr><td><b>Sigara:</b> </td><td><input type="text" name="sigara" value="{{.Anamnez.Sigara}}"></td></tr>
+                <tr><td><b>Alkol:</b> </td><td><input type="text" name="alkol" value="{{.Anamnez.Alkol}}"></td></tr>
+                <tr><td><b>Ameliyat:</b> </td><td><input type="text" name="ameliyat" value="{{.Anamnez.Ameliyat}}"></td></tr> 
+            </table>
+            <br>
+            <center><button class="buttonckisisel" type="submit" style="background-color:rgb(113, 113, 206)">Kaydı Görüntüle</button></center>
+        </form>
+
+    <form class="formag" action="/anasayfa" method="POST" >
+        <button class="buttonckisisel" type="submit"  style="background-color:rgb(165, 135, 204)">Anasayfa</button>
+    </form>
+    
+    <form class="formag">
+     <center><input class="buttonckisisel" type="button" value="Geri" onclick="history.back()" style="background-color:rgb(53, 159, 181)"></center>
+    </form>
+    </body>
+</html>
